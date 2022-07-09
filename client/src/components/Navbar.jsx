@@ -13,7 +13,7 @@ const NavBar = () => {
     }, []);
 
     const refreshToken = async () => {
-        await axios.get('https://flurrypuppy.herokuapp.com/api/users/gettoken').
+        await axios.get('https://furrypuppy.herokuapp.com/api/users/gettoken').
             then(function (response) {
                 // handle success
                 setIsLogged(true);
@@ -28,7 +28,7 @@ const NavBar = () => {
     }
 
     const logout = async () => {
-        await axios.get('https://flurrypuppy.herokuapp.com/api/users/logout').
+        await axios.get('https://furrypuppy.herokuapp.com/api/users/logout').
             then(function (response) {
                 // handle success
                 navigate("/");

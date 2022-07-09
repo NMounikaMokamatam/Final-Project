@@ -27,7 +27,7 @@ const Home = () => {
     }, []);
 
     const refreshToken = async () => {
-        await axios.get('https://flurrypuppy.herokuapp.com/api/users/gettoken').
+        await axios.get('https://furrypuppy.herokuapp.com/api/users/gettoken').
             then(function (response) {
                 // handle success
                 const decoded = jwt_decode(response.data.accessToken);
@@ -59,7 +59,7 @@ const Home = () => {
             },
             body: JSON.stringify({ post_id: post._id })
         };
-        fetch('https://flurrypuppy.herokuapp.com/api/posts/delete', options)
+        fetch('https://furrypuppy.herokuapp.com/api/posts/delete', options)
             .then(response =>response.json())
             .then(data => {
                 //console.log('Success:', data);
@@ -88,7 +88,7 @@ const Home = () => {
         }
 
         if(validPost){
-            await axios.post('https://flurrypuppy.herokuapp.com/api/posts/save', {
+            await axios.post('https://furrypuppy.herokuapp.com/api/posts/save', {
                 title: title,
                 content: post,
                 user_id: userId
@@ -120,7 +120,7 @@ const Home = () => {
     }
 
     const getUserPosts = async () =>{
-        await axios.post('https://flurrypuppy.herokuapp.com/api/posts/userposts', {
+        await axios.post('https://furrypuppy.herokuapp.com/api/posts/userposts', {
             user_id: userId
         },{
             headers: {

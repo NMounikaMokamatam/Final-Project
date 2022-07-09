@@ -11,7 +11,7 @@ const auth = require('./server/models/auth');
 app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 app.get('/', (req,res) => res.sendFile(path.join(__dirname, '/public', 'index.html')));
-app.use(cors({ credentials:true, origin:'https://flurrypuppy.herokuapp.com' }));
+app.use(cors({ credentials:true, origin:'https://furrypuppy.herokuapp.com' }));
 app.use(cookieParser());
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, ()=> console.log(`Server started on port ${PORT}`));

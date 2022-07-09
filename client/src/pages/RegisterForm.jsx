@@ -29,7 +29,7 @@ const SignupForm = () => {
             setErrorAlert("Password is required");
         } 
         if(validForm){
-            await axios.post('https://flurrypuppy.herokuapp.com/api/users/register', {
+            await axios.post('https://furrypuppy.herokuapp.com/api/users/register', {
                 username: userName,
                 email: email,
                 password: password,

@@ -27,7 +27,7 @@ const LoginForm = () => {
 
         if(validForm){
             //sign in user
-            await axios.post('https://flurrypuppy.herokuapp.com/api/users/login', {
+            await axios.post('https://furrypuppy.herokuapp.com/api/users/login', {
                 email: email,
                 password: password,
             }).then(function (response) {
