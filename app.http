@@ -1,0 +1,34 @@
+http://localhost:3000/
+
+#############
+GET http://localhost:3000/api/users/getusers
+
+##############
+POST http://localhost:3000/api/users/register
+
+#############
+POST http://localhost:3000/api/users/getuser
+
+#############
+POST http://localhost:3000/api/users/delete
+
+#############
+POST http://localhost:3000/api/users/updateuser
+
+#############
+POST http://localhost:3000/api/posts/save
+
+#############
+GET http://localhost:3000/api/posts/
+
+#############
+POST http://localhost:3000/api/posts/save
+
+#############
+POST http://localhost:3000/api/posts/getpost
+
+#############
+POST http://localhost:3000/api/posts/delete
+
+#############
+POST http://localhost:3000/api/posts/update
